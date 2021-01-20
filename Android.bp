@@ -36,3 +36,34 @@ android_app_import {
 	soc_specific: true,
 }
 
+<<<<<<< HEAD
+=======
+dex_import {
+	name: "WfdCommon",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.2-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml",
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "chargeonlymode",
+	owner: "xiaomi",
+	srcs: ["proprietary/bin/chargeonlymode"],
+	prefer: true,
+}
+
+>>>>>>> 84df564 (Tulip: Update thermal/widevine blobs from jasmine V11.0.19.0.QDIMIXM)
