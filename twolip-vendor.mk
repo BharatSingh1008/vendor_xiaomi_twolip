@@ -653,4 +653,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libthermalclient \
-    FingerprintExtensionService
+    FingerprintExtensionService \
+     manifest_android.hardware.drm@1.2-service.widevine 
+ 
